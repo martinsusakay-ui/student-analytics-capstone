@@ -1,0 +1,69 @@
+# ==========================================
+# 1. Virtual Environment (WAJIB DIABAIKAN)
+# ==========================================
+venv/
+env/
+.venv/
+
+# ==========================================
+# 2. Environment Variables (RAHASIA!)
+# ==========================================
+.env
+*.env
+!.env.example
+
+# ==========================================
+# 3. Python Cache & OS Files
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 4. IDE / Editor
+# ==========================================
+.idea/
+.vscode/
+*.swp
+
+# ==========================================
+# 5. Spark Checkpoints & State
+# ==========================================
+checkpoints/
+checkpoints_*/
+pipeline/checkpoints*/
+pipeline_state*.json
+spark-warehouse/
+metastore_db/
+derby.log
+
+# ==========================================
+# 6. File Data Besar (TAPI IZINKAN SAMPEL!)
+# ==========================================
+# Blokir semua CSV besar
+data/unb/*.csv
+data/oulad/*.csv
+
+# KECUALIKAN file sampel kecil
+!data/unb/sample_logs.csv
+!data/unb/sample_notas.csv
+!data/oulad/sample_studentInfo.csv
+!data/oulad/sample_studentVle.csv
+
+# ==========================================
+# 7. Output Model ML (Gambar & Joblib)
+# ==========================================
+dashboard/clustering_output/
+*.joblib
+*.pkl
+
+# ==========================================
+# 8. Logs & File Sementara
+# ==========================================
+*.log
+*.tmp
+temp/
+tmp/
